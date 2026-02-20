@@ -1,0 +1,25 @@
+vite v5.4.19 building for production...
+transforming...
+✓ 1810 modules transformed.
+x Build failed in 4.52s
+error during build:
+src/index.ts (11:9): "useMobile" is not exported by "src/hooks/use-mobile.tsx", imported by "src/index.ts".
+file: /Users/mohamedkhair/Coding/instant-memo-url/memo-components/src/index.ts:11:9
+
+ 9: 
+10: // Hooks
+11: export { useMobile } from './hooks/use-mobile';
+             ^
+12: 
+13: // Types
+
+    at getRollupError (file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/parseAst.js:395:41)
+    at error (file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/parseAst.js:391:42)
+    at Module.error (file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/node-entry.js:15535:16)
+    at Module.getVariableForExportName (file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/node-entry.js:15699:29)
+    at Module.includeAllExports (file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/node-entry.js:15775:37)
+    at Graph.includeStatements (file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/node-entry.js:20990:36)
+    at Graph.build (file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/node-entry.js:20925:14)
+    at async file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/node-entry.js:21607:13
+    at async catchUnfinishedHookActions (file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/node-entry.js:21076:16)
+    at async rollupInternal (file:///Users/mohamedkhair/Coding/instant-memo-url/node_modules/rollup/dist/es/shared/node-entry.js:21602:5)

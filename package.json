@@ -1,0 +1,45 @@
+{
+    "name": "@your-org/memo-components",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "vite build && tsc --emitDeclarationOnly",
+        "dev": "vite build --watch",
+        "prepare": "npm run build"
+    },
+    "peerDependencies": {
+        "react": ">=18",
+        "react-dom": ">=18"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react-swc": "^3.11.0",
+        "typescript": "^5.8.3",
+        "vite": "^5.4.19",
+        "vite-plugin-dts": "^4.x"
+    },
+    "dependencies": {
+        "@radix-ui/react-select": "^2.2.5",
+        "@radix-ui/react-switch": "^1.2.5",
+        "@radix-ui/react-tooltip": "^1.2.7",
+        "@supabase/supabase-js": "^2.93.3",
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "lucide-react": "^0.462.0",
+        "react-markdown": "^10.1.0",
+        "tailwind-merge": "^2.6.0"
+    }
+}
