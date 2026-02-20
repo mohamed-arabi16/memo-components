@@ -1,5 +1,5 @@
 import { NoteEditorProps } from '../types';
-export declare function NoteEditor({ note, initialContent, initialTitle, initialIsPrivate, initialExpiresAt, initialSharingPermission, shortId, noteId, saving, onSave, readOnly, isVisitor, user, labels, supabaseClient, onToast, dir }: NoteEditorProps & {
+export declare function NoteEditor({ initialContent, initialTitle, initialIsPrivate, initialSharingPermission, shortId, noteId, saving, onSave, readOnly, isVisitor, user, labels, supabaseClient, onToast, dir }: NoteEditorProps & {
     initialContent?: string;
     initialTitle?: string;
     initialIsPrivate?: boolean;
