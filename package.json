@@ -17,7 +17,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "vite build && tsc --emitDeclarationOnly",
+        "build": "vite build",
         "dev": "vite build --watch",
         "prepare": "npm run build"
     },
